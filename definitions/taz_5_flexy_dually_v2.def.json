@@ -1,0 +1,29 @@
+{
+    "name": "TAZ 5 | FlexyDually v2",
+    "inherits": "taz_5",
+    "version": 2,
+    "metadata":
+    {
+        "base_machine": false,
+        "visible": true,
+        "priority": "12",
+        "machine_extruder_trains":
+        {
+            "0": "taz_5_flexy_dually_v2_1st",
+            "1": "taz_5_flexy_dually_v2_2nd"
+        },
+        "toolhead_selection_name": "FlexyDually v2",
+        "nozzle_offsetting_for_disallowed_areas": false,
+        "firmware_toolhead_name": "FlexyDually v2",
+        "firmware_latest_version": "1.1.9.34",
+        "firmware_file": "TAZ5/Marlin_TAZ5_FlexyDually_1.1.9.34_5f9c029d1.hex"
+    },
+    "overrides":
+    {
+        "machine_name": { "default_value": "LulzBot TAZ 5 | FlexyDually v2" },
+        "machine_start_gcode": { "default_value_from_file": "taz_5/taz_5_flexy_dually_start" },
+        "machine_end_gcode": { "default_value_from_file": "taz_5/taz_5_flexy_dually_end" },
+        "machine_wipe_gcode": { "default_value": "" },
+        "machine_extruder_count": { "default_value": 2 }
+    }
+}

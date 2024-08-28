@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "name": "[DEV] TAZ Pro XT Long Bed | HS+ | 1.20 mm",
+    "inherits": "taz_pro_xt_lb",
+    "metadata":
+    {
+        "priority": "01",
+        "visible": true,
+        "base_machine": false,
+        "toolhead_selection_name": "HS+ | 1.20 mm | Hardened SST",
+        "machine_extruder_trains":
+        {
+            "0": "taz_pro_xt_lb_hsplus_extruder"
+        }
+    },
+    "overrides":
+    {
+        "machine_name": { "default_value": "[DEV] LulzBot TAZ Pro XT Long Bed | HS+" }
+    }
+}

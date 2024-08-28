@@ -1,0 +1,25 @@
+{
+    "version": 2,
+    "name": "TAZ Pro Long Bed",
+    "inherits": "taz_pro_lb",
+    "metadata":
+    {
+        "visible": false,
+        "base_machine": false,
+        "base_machine_id": "taz_pro_lb",
+        "toolhead_category": "Galaxy",
+        "toolhead_selection_name": "Galaxy Tool Head",
+        "preferred_quality_type": "normal",
+        "has_variants": true,
+        "preferred_variant_name": "0.5 mm",
+        "firmware_toolhead_name": "Galaxy Series",
+        "firmware_latest_version": "2.1.3.0.29",
+        "firmware_file": "Pro_LongBed/Marlin_TAZPro_LongBed_Galaxy_BLTouch_2.1.3.0.29_c1aa9fe.bin"
+    },
+    "overrides":
+    {
+        "cool_min_layer_time": { "value": 15 },
+        "machine_start_gcode": { "default_value_from_file": "taz_pro_lb/taz_pro_lb_galaxy_start" },
+        "speed_travel_layer_0": { "value": 100 }
+    }
+}

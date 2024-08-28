@@ -1,0 +1,33 @@
+{
+    "version": 2,
+    "name": "TAZ Pro | TWNB285",
+    "inherits": "taz_pro_galaxy",
+    "metadata":
+    {
+        "priority": "05",
+        "visible": true,
+        "base_machine": false,
+        "toolhead_selection_name": "TWIN NEBULA 285 | Nickel-Plated Brass",
+        "machine_extruder_trains":
+        {
+            "0": "taz_pro_twnb285_extruder_1st",
+            "1": "taz_pro_twnb285_extruder_2nd"
+        },
+        "has_optional_bltouch": false,
+        "firmware_toolhead_name": "Galaxy Dual Extruder",
+        "firmware_latest_version": "2.1.3.0.30",
+        "firmware_file": "Pro/Marlin_TAZPro_Galaxy_DualExtruder_2.1.3.0.30_564d836.bin",
+        "firmware_bltouch_latest_version": "",
+        "firmware_file_bltouch": ""
+    },
+    "overrides":
+    {
+        "machine_name": { "default_value": "LulzBot TAZ Pro | TWNB285" },
+        "machine_start_gcode": { "default_value_from_file": "taz_pro/taz_pro_galaxy_dual_start" },
+        "machine_end_gcode": { "default_value_from_file": "taz_pro/taz_pro_dual_end" },
+        "machine_wipe_gcode": { "default_value_from_file": "taz_pro/taz_pro_dual_wipe" },
+        "machine_extruder_count": { "default_value": 2 },
+        "layer_start_x": { "value": "100" },
+        "layer_start_y": { "value": "100" }
+    }
+}

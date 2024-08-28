@@ -1,0 +1,21 @@
+{
+    "version": 2,
+    "name": "TAZ Pro XT+ | MET175",
+    "inherits": "taz_pro_xt_galaxy",
+    "metadata":
+    {
+        "priority": "02",
+        "visible": true,
+        "base_machine": false,
+        "bltouch_is_standard": true,
+        "toolhead_selection_name": "METEOR 175 | Nickel-Plated Brass",
+        "machine_extruder_trains":
+        {
+            "0": "taz_pro_xt_met175_extruder"
+        }
+    },
+    "overrides":
+    {
+        "machine_name": { "default_value": "LulzBot TAZ Pro XT | MET175" }
+    }
+}

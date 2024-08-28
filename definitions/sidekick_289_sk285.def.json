@@ -1,0 +1,22 @@
+{
+    "version": 2,
+    "name": "SideKick 289 | SK285 | 0.50 mm",
+    "inherits": "sidekick_289",
+    "metadata":
+    {
+        "priority": "01",
+        "visible": true,
+        "base_machine": false,
+        "toolhead_selection_name": "SK285 | 0.50 mm | Brass",
+        "machine_extruder_trains":
+        {
+            "0": "sidekick_289_sk285_extruder"
+        },
+        "firmware_toolhead_name_no_lcd": "SK285",
+        "firmware_file_no_lcd": "289/Marlin_289_SK285_2.0.9.0.16_8235204.hex"
+    },
+    "overrides":
+    {
+        "machine_name": { "default_value": "LulzBot SideKick 289 | SK285" }
+    }
+}

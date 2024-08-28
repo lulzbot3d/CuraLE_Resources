@@ -1,0 +1,23 @@
+{
+    "name": "TAZ 5 | MOARstruder",
+    "inherits": "taz_5",
+    "version": 2,
+    "metadata":
+    {
+        "priority": "14",
+        "base_machine": false,
+        "visible": true,
+        "machine_extruder_trains":
+        {
+            "0": "taz_5_moarstruder_extruder"
+        },
+        "toolhead_selection_name": "MOARstruder",
+        "firmware_toolhead_name": "MOARstruder",
+        "firmware_latest_version": "1.1.9.34",
+        "firmware_file": "TAZ5/Marlin_TAZ5_Moarstruder_1.1.9.34_5f9c029d1.hex"
+    },
+    "overrides":
+    {
+        "machine_name": { "default_value": "LulzBot TAZ 6 | MOARstruder" }
+    }
+}

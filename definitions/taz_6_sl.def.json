@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "name": "TAZ 6 | SL | 0.25 mm",
+    "inherits": "taz_6",
+    "metadata":
+    {
+        "priority": "02",
+        "visible": true,
+        "base_machine": false,
+        "toolhead_selection_name": "SL | 0.25 mm | Nickel-Plated Copper",
+        "machine_extruder_trains":
+        {
+            "0": "taz_6_sl_extruder"
+        }
+    },
+    "overrides":
+    {
+        "machine_name": { "default_value": "LulzBot TAZ 6 | SL" }
+    }
+}

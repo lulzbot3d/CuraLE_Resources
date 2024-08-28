@@ -1,0 +1,21 @@
+{
+    "version": 2,
+    "name": "TWNB175 Right",
+    "inherits": "galaxy_extruder",
+    "metadata": {
+        "machine": "taz_pro_twnb175",
+        "position": "1"
+    },
+    "overrides": {
+        "material_diameter": { "default_value": 1.75 },
+        "extruder_nr": {
+            "default_value": 1,
+            "maximum_value": "1"
+        },
+        "extruder_disallowed_areas": {
+            "default_value": [
+                [[-115,  140], [ -140,  140], [ -140, -140], [-115,  -140]]
+            ]
+        }
+    }
+}

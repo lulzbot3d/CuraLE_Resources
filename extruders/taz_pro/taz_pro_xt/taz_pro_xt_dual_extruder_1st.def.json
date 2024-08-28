@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "name": "Left Hot End",
+    "inherits": "universal_extruder",
+    "metadata": {
+        "machine": "taz_pro_xt_dual",
+        "position": "0"
+    },
+
+    "overrides": {
+        "extruder_nr": {
+            "default_value": 0,
+            "maximum_value": "1"
+        }
+    }
+}

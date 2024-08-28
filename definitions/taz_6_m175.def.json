@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "name": "TAZ 6 | M175 v2 | 0.50 mm",
+    "inherits": "taz_6",
+    "metadata":
+    {
+        "priority": "07",
+        "visible": true,
+        "base_machine": false,
+        "toolhead_selection_name": "M175 v2 | 0.50 mm | Carbide Coated Copper",
+        "machine_extruder_trains":
+        {
+            "0": "taz_6_m175_extruder"
+        }
+    },
+    "overrides":
+    {
+        "machine_name": { "default_value": "LulzBot TAZ 6 | M175 v2" }
+    }
+}

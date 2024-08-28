@@ -1,0 +1,21 @@
+{
+    "version": 2,
+    "name": "TAZ 5 | Aerostruder | 0.50 mm",
+    "inherits": "taz_5",
+    "metadata":
+    {
+        "priority": "08",
+        "visible": true,
+        "base_machine": false,
+        "toolhead_selection_name": "Aerostruder",
+        "machine_extruder_trains":
+        {
+            "0": "taz_5_aerostruder_extruder"
+        },
+        "firmware_toolhead_name": "Aerostruder"
+    },
+    "overrides":
+    {
+        "machine_name": { "default_value": "LulzBot TAZ 5 | Aerostruder" }
+    }
+}

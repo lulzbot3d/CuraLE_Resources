@@ -1,0 +1,9 @@
+{
+    "version": 2,
+    "name": "HE",
+    "inherits": "universal_extruder",
+    "metadata":
+    {
+        "machine": "taz_pro_xt_lb_he"
+    }
+}

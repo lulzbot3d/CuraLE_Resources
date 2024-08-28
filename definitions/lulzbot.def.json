@@ -1,0 +1,313 @@
+{
+    "version": 2,
+    "name": "LulzBot",
+    "inherits": "fdmprinter",
+    "metadata":
+    {
+        "author": "LulzBot",
+        "manufacturer": "Fargo Additive Manufacturing Equipment 3D, LLC",
+        "firmware_type": "Marlin",
+        "visible": false,
+        "file_formats": "text/x-gcode;application/x-stl-ascii;application/x-stl-binary;application/x-wavefront-obj;application/x3g",
+        "first_start_actions":
+        [
+            "MachineSettingsAction"
+        ],
+        "has_materials": true,
+        "has_machine_quality": true,
+        "preferred_material": "PolyLite_PLA_(Polymaker)",
+        "preferred_quality_type": "standard",
+        "variant_machine": false,
+        "has_variants": false,
+        "variants_name": "Nozzle Size",
+        "machine_category": "Current",
+        "toolhead_category": "Universal",
+        "has_optional_lcd": false,
+        "lcd_is_standard": true,
+        "has_optional_bltouch": false,
+        "bltouch_is_standard": false,
+        "required_actions": ["ChangeToolHead"],
+        "supported_actions": ["MachineSettingsAction", "UpgradeFirmware"],
+        "firmware_toolhead_name": "",
+        "firmware_toolhead_name_no_lcd": "",
+        "firmware_latest_version": "",
+        "firmware_bltouch_latest_version": "",
+        "firmware_no_lcd_latest_version": ""
+    },
+    "overrides":
+    {
+        "acceleration_enabled": { "description": "Enables adjusting the print head acceleration. Increasing the accelerations can reduce printing time at the cost of print quality. Populated values are the firmware defaults." },
+        "acceleration_print": { "default_value": 2000 },
+        "acceleration_travel": { "value": 4000 },
+        "brim_line_count": { "default_value": 10 },
+        "infill_before_walls": { "default_value": false },
+        "infill_pattern": { "value": "'grid' if infill_sparse_density > 25 else 'grid'" },
+        "infill_sparse_thickness": { "maximum_value_warning": "machine_nozzle_size" },
+        "infill_wipe_dist": { "maximum_value_warning": "machine_nozzle_size * 1.5" },
+        "jerk_enabled": {
+            "description": "Enables adjusting the jerk of print head when the velocity in the X or Y axis changes. Increasing the jerk can reduce printing time at the cost of print quality. Populated values are the firmware defaults."
+        },
+        "jerk_travel":
+        {
+            "default_value": 20,
+            "value": "jerk_print if magic_spiralize else 20"
+        },
+        "layer_height_0": { "maximum_value_warning": "0.85 * min(extruderValues('machine_nozzle_size'))" },
+        "line_width": { "default_value": 0.5 },
+        "machine_acceleration": { "default_value": 2000 },
+        "machine_baudrate": { "default_value": "250000" },
+        "machine_center_is_zero": { "default_value": false },
+        "machine_heated_bed": { "default_value": true },
+        "machine_heat_zone_length": { "default_value": 20 },
+        "machine_max_feedrate_x": { "default_value": 500 },
+        "machine_max_feedrate_y": { "default_value": 500 },
+        "machine_max_feedrate_z": { "default_value": 8 },
+        "machine_max_feedrate_e": { "default_value": 40 },
+        "machine_nozzle_size": { "default_value": 0.5 },
+        "magic_fuzzy_skin_point_density": { "default_value": 4 },
+        "magic_fuzzy_skin_thickness": { "default_value": 0.1 },
+        "material_bed_temp_prepend": { "default_value": false },
+        "material_print_temperature":
+        {
+            "enabled": true,
+            "minimum_value": "0",
+            "maximum_value_warning": "295"
+        },
+        "material_print_temp_prepend": { "default_value": false },
+        "material_standby_temperature": { "default_value": 160 },
+        "prime_tower_position_x": { "default_value": 20 },
+        "prime_tower_position_y": { "default_value": 20 },
+        "raft_interface_thickness":
+        {
+            "maximum_value_warning": "0.85 * min(extruderValues('machine_nozzle_size'))",
+            "value": "layer_height_0"
+        },
+        "retraction_combing": {
+            "value": "infill",
+            "resolve": "'infill'"
+        },
+        "retraction_min_travel": { "minimum_value_warning": "line_width * 1.5 if line_width < 1.5 else line_width" },
+        "skirt_brim_minimal_length": { "default_value": 50 },
+        "skirt_line_count": { "default_value": 2 },
+        "speed_travel": { "value": "speed_print if magic_spiralize else 175" },
+        "support_angle":
+        {
+            "default_value": 60.0,
+            "minimum_value_warning": 40.0
+        },
+        "support_infill_sparse_thickness": { "maximum_value_warning": "machine_nozzle_size" },
+        "support_interface_density": { "default_value": 40 },
+        "support_interface_height": { "value": 2.5 },
+        "support_interface_pattern": { "default_value": "triangles" },
+        "support_join_distance":
+        {
+            "default_value": 5.0,
+            "maximum_value_warning": "15",
+            "minimum_value": "0"
+        },
+        "support_tower_diameter": { "default_value": 8 },
+        "support_tower_maximum_supported_diameter": { "default_value": 8 },
+        "support_tower_roof_angle": { "default_value": 55 },
+        "support_xy_distance": {
+            "maximum_value_warning": "machine_nozzle_size * 3",
+            "default_value": 1.5,
+            "value": "min(machine_nozzle_size * 2, 2.5)"
+        },
+        "support_z_distance": { "value": "(math.ceil(0.25 / layer_height) * layer_height) if layer_height < 0.25 else layer_height"},
+        "travel_retract_before_outer_wall": { "default_value": true },
+        "wall_thickness":
+        {
+            "default_value": 1.0,
+            "value": "wall_line_width_0 if magic_spiralize else 1.0"
+        },
+        "zig_zaggify_infill": { "value": true }
+    },
+
+    "settings":
+    {
+        "machine_settings":
+        {
+            "children":
+            {
+                "machine_nozzle_z_offset":
+                {
+                    "label": "Nozzle Z Offset",
+                    "description": "Setting for modifying position of nozzle when different nozzles have different lengths",
+                    "enabled": false,
+                    "unit": "mm",
+                    "type": "float",
+                    "default_value": 0,
+                    "settable_per_extruder": true
+                },
+                "machine_has_lcd":
+                {
+                    "label": "Has LCD",
+                    "description": "Machine has a graphical LCD.",
+                    "enabled": false,
+                    "type": "bool",
+                    "default_value": true
+                },
+                "machine_has_bltouch":
+                {
+                    "label": "Has BLTouch",
+                    "description": "Machine is equipped with a BLTouch probe for build plate leveling.",
+                    "enabled": false,
+                    "type": "bool",
+                    "default_value": false
+                },
+                "machine_associated_urls":
+                {
+                    "label": "Machine Associated URLs",
+                    "description": "A dictionary of user-entered URLs associated with this machine in Cura LE.",
+                    "enabled": false,
+                    "type": "str",
+                    "default_value": "{}"
+                },
+                "firmware_machine_type":
+                {
+                    "label": "Firmware Machine Type",
+                    "description": "Machine type as sent via Marlin from an actual machine.",
+                    "enabled": false,
+                    "type": "str",
+                    "default_value": ""
+                }
+            }
+        },
+        "material":
+        {
+            "children":
+            {
+                "material_bed_temperature":
+                {
+                    "children":
+                    {
+                        "material_part_removal_temperature":
+                        {
+                            "label": "Part Removal Temperature",
+                            "description": "The ideal bed temperature to remove the model after printing.",
+                            "enabled": "machine_heated_bed",
+                            "type": "float",
+                            "unit": "°C",
+                            "default_value": 50,
+                            "resolve": "sum(extruderValues('material_part_removal_temperature')) / len(extruderValues('material_part_removal_temperature'))",
+                            "minimum_value": "0",
+                            "maximum_value": "110",
+                            "settable_per_mesh": false,
+                            "settable_per_extruder": false
+                        },
+                        "material_keep_part_removal_temperature":
+                        {
+                            "label": "Keep Heating",
+                            "description": "Keep temperature after print on removal value",
+                            "enabled": true,
+                            "type": "bool",
+                            "default_value": true,
+                            "resolve": "any(extruderValues('material_keep_part_removal_temperature'))",
+                            "settable_per_mesh": false,
+                            "settable_per_extruder": false
+                        },
+                        "material_keep_part_removal_temperature_t":
+                        {
+                            "label": "Temperature After Print",
+                            "description": "",
+                            "enabled": false,
+                            "type": "float",
+                            "unit": "°C",
+                            "default_value": "material_part_removal_temperature",
+                            "resolve": "material_part_removal_temperature if material_keep_part_removal_temperature else 0",
+                            "settable_per_mesh": false,
+                            "settable_per_extruder": false
+                        }
+                    }
+                },
+                "material_print_temperature":
+                {
+                    "children":
+                    {
+                        "material_probe_temperature":
+                        {
+                            "label": "Probe Temperature",
+                            "description": "The nozzle temperature used before probing. This should be set cool enough that the printing material does not ooze from the nozzle while also not cooling the nozzle down entirely.",
+                            "enabled": true,
+                            "type": "float",
+                            "unit": "°C",
+                            "default_value": 160,
+                            "minimum_value": "0",
+                            "maximum_value_warning": "250",
+                            "maximum_value": "300",
+                            "settable_per_mesh": false,
+                            "settable_per_extruder": true
+                        },
+                        "material_soften_temperature":
+                        {
+                            "label": "Soften Temperature",
+                            "description": "The nozzle temperature used before z-axis homing. Softens material enough for an initial retraction prior to wiping.",
+                            "enabled": true,
+                            "type": "float",
+                            "unit": "°C",
+                            "default_value": 180,
+                            "minimum_value": "0",
+                            "maximum_value_warning": "250",
+                            "maximum_value": "300",
+                            "settable_per_mesh": false,
+                            "settable_per_extruder": true
+                        },
+                        "material_wipe_temperature":
+                        {
+                            "label": "Wipe Temperature",
+                            "description": "The nozzle temperature used during nozzle wiping. This should be set just warm enough that the printing material has softened to the point that the wiper pad will be able to remove excess material from the nozzle.",
+                            "enabled": true,
+                            "type": "float",
+                            "unit": "°C",
+                            "default_value": 180,
+                            "minimum_value": "0",
+                            "maximum_value_warning": "250",
+                            "maximum_value": "300",
+                            "settable_per_mesh": false,
+                            "settable_per_extruder": true
+                        }
+                    }
+                }
+            }
+        },
+        "speed":
+        {
+            "children":
+            {
+                "linear_advance":
+                {
+                    "label": "Linear Advance Factor",
+                    "description": "Sets the K factor for Linear Advance. This setting will only have an effect if there is an \"M900\" command in the start gcode.",
+                    "enabled": true,
+                    "type": "float",
+                    "minimum_value": "0.0",
+                    "maximum_value_warning": "2.0",
+                    "maximum_value": "5.0",
+                    "default_value": 0.05,
+                    "settable_per_mesh": false,
+                    "settable_per_extruder": true
+                }
+            }
+        },
+        "lulzbot_addons":
+        {
+            "label": "LulzBot Add-Ons",
+            "type": "category",
+            "description": "Settings specific to LulzBot printers",
+            "icon": "Lulz_Simple",
+            "children":
+            {
+                "lulzbot_test_setting":
+                {
+                    "label": "Test Setting",
+                    "description": "Non-functional. This setting is only here as a placeholder.",
+                    "enabled": true,
+                    "type": "bool",
+                    "default_value": false,
+                    "settable_per_mesh": false,
+                    "settable_per_extruder": true
+                }
+            }
+        }
+    }
+}

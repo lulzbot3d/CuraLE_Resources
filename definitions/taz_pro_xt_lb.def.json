@@ -1,0 +1,35 @@
+{
+    "version": 2,
+    "name": "TAZ Pro XT Long Bed",
+    "inherits": "taz",
+    "metadata":
+    {
+        "visible": false,
+        "machine_priority": "01",
+        "base_machine": true,
+        "variant_machine": true,
+        "base_machine_id": "taz_pro_xt_lb",
+        "machine_category": "Dev",
+        "toolhead_selection_name": "Universal Tool Head",
+        "platform": "bed_plates/labeled/taz_pro_xt_lb_labeled.stl",
+        "platform_offset":
+        [
+            0,
+            -25.8,
+            0
+        ],
+        "file_formats": "text/x-gcode",
+        "bltouch_is_standard": true,
+        "firmware_toolhead_name": "Legacy Universal",
+        "firmware_latest_version": "2.1.3.0.29",
+        "firmware_file": "Pro_XT_LongBed/Marlin_TAZProXT_LongBed_Universal_BLTouch_2.1.3.0.29_c1aa9fe.bin"
+    },
+    "overrides":
+    {
+        "machine_name": { "default_value": "LulzBot TAZ Pro XT Long Bed" },
+        "machine_height": { "default_value": 586 },
+        "machine_depth": { "default_value": 582 },
+        "machine_acceleration": { "default_value": 500 },
+        "acceleration_print": { "default_value": 500 }
+    }
+}

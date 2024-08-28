@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "name": "Bio | Syringe Pump",
+    "inherits": "bio_base",
+    "metadata":
+    {
+        "priority": "00",
+        "visible": true,
+        "base_machine": false,
+        "toolhead_selection_name": "Syringe Pump",
+        "machine_extruder_trains":
+        {
+            "0": "bio_syringe"
+        }
+    }
+}

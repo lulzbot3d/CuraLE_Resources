@@ -1,0 +1,56 @@
+{
+    "version": 2,
+    "name": "Bio",
+    "inherits": "lulzbot",
+    "metadata":
+    {
+        "machine_priority": "00",
+        "syringe_printer": true,
+        "base_machine": true,
+        "base_machine_id": "bio_base",
+        "machine_category": "Bio",
+        "toolhead_category": "",
+        "file_formats": "text/x-gcode",
+        "platform": "bed_plates/labeled/bio_labeled.stl",
+        "platform_offset":
+        [
+            0,
+            -14.8,
+            -2
+        ],
+        "preferred_material": "Generic_Sodium_Alginate",
+        "preferred_quality_type": "25 gauge",
+        "firmware_toolhead_name": "SingleExtruder",
+        "firmware_latest_version": "2.0.0.175",
+        "firmware_file": "Bio/Marlin_Bio_SingleExtruder_2.0.0.175_6c8c1c0d.hex"
+    },
+    "overrides":
+    {
+        "machine_name": { "default_value": "LulzBot Bio" },
+        "firmware_machine_type": { "default_value": "LulzBot Bio" },
+        "machine_width": { "default_value": 162 },
+        "machine_depth": { "default_value": 162 },
+        "machine_height": { "default_value": 180 },
+        "machine_start_gcode": { "default_value_from_file": "bio/bio_start" },
+        "machine_end_gcode": { "default_value_from_file": "bio/bio_end" },
+        "machine_level_x_axis_gcode": { "default_value_from_file": "mini_2/mini_2_level_x_axis" },
+        "machine_disallowed_areas": {
+            "default_value": [
+                [[85,85],[85,77],[77,85]],
+                [[-85,85],[-85,77],[-77,85]],
+                [[85,-85],[85,-77],[77,-85]],
+                [[-85,-85],[-85,-77],[-77,-85]]
+            ]
+        },
+        "machine_head_with_fans_polygon": {
+            "default_value": [
+                [0, 162],
+                [0, 0],
+                [162, 162],
+                [162, 0]
+            ]
+        },
+        "machine_abort_gcode": { "default_value": "G28 Z" },
+        "machine_center_is_zero": { "default_value": true }
+    }
+}

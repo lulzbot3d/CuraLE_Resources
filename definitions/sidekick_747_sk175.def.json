@@ -1,0 +1,22 @@
+{
+    "version": 2,
+    "name": "SideKick 747 | SK175 | 0.50 mm",
+    "inherits": "sidekick_747",
+    "metadata":
+    {
+        "priority": "00",
+        "visible": true,
+        "base_machine": false,
+        "toolhead_selection_name": "SK175 | 0.50 mm | Brass",
+        "machine_extruder_trains":
+        {
+            "0": "sidekick_747_sk175_extruder"
+        },
+        "firmware_toolhead_name_no_lcd": "SK175",
+        "firmware_file_no_lcd": "747/Marlin_747_SK175_2.0.9.0.16_8235204.hex"
+    },
+    "overrides":
+    {
+        "machine_name": { "default_value": "LulzBot SideKick 747 | SK175" }
+    }
+}

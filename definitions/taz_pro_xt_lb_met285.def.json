@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "name": "[DEV] TAZ Pro XT Long Bed | MET285",
+    "inherits": "taz_pro_xt_lb_galaxy",
+    "metadata":
+    {
+        "priority": "01",
+        "visible": true,
+        "base_machine": false,
+        "toolhead_selection_name": "METEOR 285 | Nickel-Plated Brass",
+        "machine_extruder_trains":
+        {
+            "0": "taz_pro_xt_lb_met285_extruder"
+        }
+    },
+    "overrides":
+    {
+        "machine_name": { "default_value": "[DEV] LulzBot TAZ Pro XT Long Bed | MET285" }
+    }
+}

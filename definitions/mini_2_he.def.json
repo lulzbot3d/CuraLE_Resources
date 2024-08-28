@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "name": "Mini 2 | HE | 0.50 mm",
+    "inherits": "mini_2",
+    "metadata":
+    {
+        "priority": "05",
+        "visible": true,
+        "base_machine": false,
+        "toolhead_selection_name": "HE | 0.50 mm | Hardened SST",
+        "machine_extruder_trains":
+        {
+            "0": "mini_2_he_extruder"
+        }
+    },
+    "overrides":
+    {
+        "machine_name": { "default_value": "LulzBot Mini 2 | HE" }
+    }
+}

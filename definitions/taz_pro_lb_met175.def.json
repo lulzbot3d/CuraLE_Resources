@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "name": "TAZ Pro Long Bed | MET175",
+    "inherits": "taz_pro_lb_galaxy",
+    "metadata":
+    {
+        "priority": "02",
+        "visible": true,
+        "base_machine": false,
+        "toolhead_selection_name": "METEOR 175 | Nickel-Plated Brass",
+        "machine_extruder_trains":
+        {
+            "0": "taz_pro_lb_met175_extruder"
+        }
+    },
+    "overrides":
+    {
+        "machine_name": { "default_value": "LulzBot TAZ Pro Long Bed | MET175" }
+    }
+}

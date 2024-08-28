@@ -1,0 +1,13 @@
+{
+    "version": 2,
+    "name": "M175",
+    "inherits": "universal_extruder",
+    "metadata":
+    {
+        "machine": "taz_pro_xt_lb_m175"
+    },
+    "overrides":
+    {
+        "material_diameter": { "default_value": 1.75 }
+    }
+}

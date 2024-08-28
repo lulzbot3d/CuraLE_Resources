@@ -1,0 +1,19 @@
+{
+    "version": 2,
+    "name": "[DEV] Core XY | MET285",
+    "inherits": "dev_core_xy_galaxy",
+    "metadata":
+    {
+        "priority": "01",
+        "visible": true,
+        "toolhead_selection_name": "METEOR 285 | Nickel-Plated Brass",
+        "machine_extruder_trains":
+        {
+            "0": "dev_core_xy_met285_extruder"
+        }
+    },
+    "overrides":
+    {
+        "machine_name": { "default_value": "LulzBot Core XY | MET285" }
+    }
+}

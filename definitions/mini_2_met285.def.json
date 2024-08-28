@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "name": "Mini 2 | MET285",
+    "inherits": "mini_2_galaxy",
+    "metadata":
+    {
+        "priority": "01",
+        "visible": true,
+        "base_machine": false,
+        "toolhead_selection_name": "METEOR 285 | Nickel-Plated Brass",
+        "machine_extruder_trains":
+        {
+            "0": "mini_2_met285_extruder"
+        }
+    },
+    "overrides":
+    {
+        "machine_name": { "default_value": "LulzBot Mini 2 | MET285" }
+    }
+}

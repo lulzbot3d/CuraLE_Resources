@@ -1,0 +1,19 @@
+{
+    "version": 2,
+    "name": "Mini 3 | MET175",
+    "inherits": "mini_3_galaxy",
+    "metadata":
+    {
+        "priority": "02",
+        "visible": true,
+        "toolhead_selection_name": "METEOR 175 | Nickel-Plated Brass",
+        "machine_extruder_trains":
+        {
+            "0": "mini_3_met175_extruder"
+        }
+    },
+    "overrides":
+    {
+        "machine_name": { "default_value": "LulzBot Mini 3 | MET175" }
+    }
+}

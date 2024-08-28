@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "name": "Mini 2 | HS+ | 1.20 mm",
+    "inherits": "mini_2",
+    "metadata":
+    {
+        "priority": "07",
+        "visible": true,
+        "base_machine": false,
+        "toolhead_selection_name": "HS+ | 1.20 mm | Hardened SST",
+        "machine_extruder_trains":
+        {
+            "0": "mini_2_hsplus_extruder"
+        }
+    },
+    "overrides":
+    {
+        "machine_name": { "default_value": "LulzBot Mini 2 | HS+" }
+    }
+}

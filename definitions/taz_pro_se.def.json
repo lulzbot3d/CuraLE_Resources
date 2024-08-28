@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "name": "TAZ Pro S | SE | 0.50 mm",
+    "inherits": "taz_pro",
+    "metadata":
+    {
+        "priority": "05",
+        "visible": true,
+        "base_machine": false,
+        "toolhead_selection_name": "SE | 0.50 mm | Nickel-Plated Copper",
+        "machine_extruder_trains":
+        {
+            "0": "taz_pro_se_extruder"
+        }
+    },
+    "overrides":
+    {
+        "machine_name": { "default_value": "LulzBot TAZ Pro S | SE" }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "name": "TAZ Workhorse+ | MET175",
+    "inherits": "taz_workhorse_galaxy",
+    "metadata":
+    {
+        "priority": "02",
+        "visible": true,
+        "base_machine": false,
+        "toolhead_selection_name": "METEOR 175 | Nickel-Plated Brass",
+        "machine_extruder_trains":
+        {
+            "0": "taz_workhorse_met175_extruder"
+        }
+    },
+    "overrides":
+    {
+        "machine_name": { "default_value": "LulzBot TAZ Workhorse | MET175" }
+    }
+}

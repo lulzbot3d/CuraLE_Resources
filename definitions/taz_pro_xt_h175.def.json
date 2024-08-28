@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "name": "TAZ Pro XT | H175 | 0.50 mm",
+    "inherits": "taz_pro_xt",
+    "metadata":
+    {
+        "priority": "09",
+        "visible": true,
+        "base_machine": false,
+        "toolhead_selection_name": "H175 | 0.50 mm | Nickel-Plated Copper",
+        "machine_extruder_trains":
+        {
+            "0": "taz_pro_xt_h175_extruder"
+        }
+    },
+    "overrides":
+    {
+        "machine_name": { "default_value": "LulzBot TAZ Pro XT | H175" }
+    }
+}

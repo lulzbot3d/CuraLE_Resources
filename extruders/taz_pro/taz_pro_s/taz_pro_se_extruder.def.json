@@ -1,0 +1,9 @@
+{
+    "version": 2,
+    "name": "SE",
+    "inherits": "universal_extruder",
+    "metadata":
+    {
+        "machine": "taz_pro_se"
+    }
+}

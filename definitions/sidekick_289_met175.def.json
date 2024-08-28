@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "name": "SideKick 289 | MET175",
+    "inherits": "sidekick_289_galaxy",
+    "metadata":
+    {
+        "priority": "03",
+        "visible": true,
+        "base_machine": false,
+        "toolhead_selection_name": "METEOR 175 | Nickel-Plated Brass",
+        "machine_extruder_trains":
+        {
+            "0": "sidekick_289_met175_extruder"
+        }
+    },
+    "overrides":
+    {
+        "machine_name": { "default_value": "LulzBot SideKick 289 | MET175" }
+    }
+}

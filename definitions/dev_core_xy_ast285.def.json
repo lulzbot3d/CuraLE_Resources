@@ -1,0 +1,21 @@
+{
+    "version": 2,
+    "name": "[DEV] Core XY | AST285",
+    "inherits": "dev_core_xy_galaxy",
+    "metadata":
+    {
+        "priority": "03",
+        "visible": true,
+        "preferred_variant_name": "1.2 mm",
+        "toolhead_selection_name": "ASTEROID 285 | GammaMaster Steel",
+        "machine_extruder_trains":
+        {
+            "0": "dev_core_xy_ast285_extruder"
+        }
+    },
+    "overrides":
+    {
+        "machine_name": { "default_value": "LulzBot Core XY | AST285" },
+        "travel_avoid_supports": { "value" : true }
+    }
+}

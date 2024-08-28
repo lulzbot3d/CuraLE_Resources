@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "name": "TAZ Pro XT | HE | 0.50 mm",
+    "inherits": "taz_pro_xt",
+    "metadata":
+    {
+        "priority": "06",
+        "visible": true,
+        "base_machine": false,
+        "toolhead_selection_name": "HE | 0.50 mm | Hardened SST",
+        "machine_extruder_trains":
+        {
+            "0": "taz_pro_xt_he_extruder"
+        }
+    },
+    "overrides":
+    {
+        "machine_name": { "default_value": "LulzBot TAZ Pro XT | HE" }
+    }
+}
