@@ -1,0 +1,64 @@
+{
+    "version": 2,
+    "name": "LulzBot Extruder",
+    "inherits": "fdmextruder",
+    "metadata":
+    {
+        "author": "LulzBot",
+        "manufacturer": "Fargo Additive Manufacturing Equipment 3D, LLC"
+    },
+    "overrides":
+    {
+        "machine_nozzle_size": { "default_value": 0.5 }
+    },
+    "settings":
+    {
+        "lulzbot_addons":
+        {
+            "children":
+            {
+                "purge_line_area_depth":
+                {
+                    "default_value": 100,
+                    "description": "The depth of the area where the exturder will purge.",
+                    "label": "Purge Line Disallowed Area Depth",
+                    "settable_globally": false,
+                    "settable_per_extruder": true,
+                    "settable_per_mesh": false,
+                    "settable_per_meshgroup": false,
+                    "type": "int"
+                },
+                "purge_line_area_width":
+                {
+                    "default_value": 10,
+                    "description": "The width of the area where the exturder will purge.",
+                    "label": "Purge Line Disallowed Area Width",
+                    "settable_globally": false,
+                    "settable_per_extruder": true,
+                    "settable_per_mesh": false,
+                    "settable_per_meshgroup": false,
+                    "type": "int"
+                },
+                "purge_line_location":
+                {
+                    "default_value": "frontleft",
+                    "description": "The bed edge location that the purge line is printed on.",
+                    "label": "Purge Line Bed Location",
+                    "options":
+                    {
+                        "frontleft": "Front Left",
+                        "frontright": "Front Right"
+                    },
+                    "settable_globally": false,
+                    "settable_per_extruder": true,
+                    "settable_per_mesh": false,
+                    "settable_per_meshgroup": false,
+                    "type": "enum"
+                }
+            },
+            "description": "Settings specific to LulzBot extruders",
+            "label": "LulzBot Settings",
+            "type": "category"
+        }
+    }
+}
