@@ -17,8 +17,8 @@ Repository specifically for holding the LulzBot CuraLE Resources seperately of t
 [License]: LICENSE
 [Scorecard]: https://api.securityscorecards.dev/projects/github.com/lulzbot3d/CuraLE_Resources
 
-[Badge Package]: https://img.shields.io/github/actions/workflow/status/lulzbot3d/CuraLE_Resources/conan-package.yml?style=for-the-badge&color=C1D82F&labelColor=788814&logoColor=white&logo=Conan&label=Conan%20Package
-[Badge Format]: https://img.shields.io/github/actions/workflow/status/lulzbot3d/CuraLE_Resources/printer-linter-format.yml?style=for-the-badge&color=C1D82F&labelColor=788814&logoColor=white&logo=JSON&label=Linter%20Formatting
-[Badge Size]: https://img.shields.io/github/repo-size/lulzbot3d/CuraLE_Resources?style=for-the-badge&color=CCCCCC&labelColor=666666&logoColor=white&logo=GoogleAnalytics
-[Badge License]: https://img.shields.io/badge/License-LGPL3-336887.svg?style=for-the-badge&color=A32D2A&labelColor=511615&logoColor=white&logo=GNU
+[Badge Package]: https://img.shields.io/github/actions/workflow/status/lulzbot3d/CuraLE_Resources/conan-package.yml?style=for-the-badge&logoColor=white&logo=Conan&label=Conan%20Package
+[Badge Format]: https://img.shields.io/github/actions/workflow/status/lulzbot3d/CuraLE_Resources/printer-linter-format.yml?style=for-the-badge&logoColor=white&logo=JSON&label=Linter%20Formatting
+[Badge Size]: https://img.shields.io/github/repo-size/lulzbot3d/CuraLE_Resources?style=for-the-badge&logoColor=white&logo=GoogleAnalytics
+[Badge License]: https://img.shields.io/github/license/lulzbot3d/CuraLE_Resources?style=for-the-badge&logoColor=white&logo=GNU
 [Badge OpenSSF Scorecard]: https://img.shields.io/ossf-scorecard/github.com/lulzbot3d/CuraLE_Resources?style=for-the-badge&logo=GitHub&label=OpenSSF%20Scorecard
