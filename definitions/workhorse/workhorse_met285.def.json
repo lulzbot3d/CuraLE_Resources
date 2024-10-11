@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "name": "Workhorse+ | MET285",
+    "inherits": "workhorse_galaxy",
+    "metadata":
+    {
+        "priority": "01",
+        "visible": true,
+        "base_machine": false,
+        "toolhead_selection_name": "METEOR 285 | Nickel-Plated Brass",
+        "machine_extruder_trains":
+        {
+            "0": "workhorse_met285_extruder"
+        }
+    },
+    "overrides":
+    {
+        "machine_name": { "default_value": "LulzBot Workhorse | MET285" }
+    }
+}

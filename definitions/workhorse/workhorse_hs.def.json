@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "name": "Workhorse | HS | 0.80 mm",
+    "inherits": "workhorse",
+    "metadata":
+    {
+        "priority": "06",
+        "visible": true,
+        "base_machine": false,
+        "toolhead_selection_name": "HS | 0.80 mm | Hardened SST",
+        "machine_extruder_trains":
+        {
+            "0": "workhorse_hs_extruder"
+        }
+    },
+    "overrides":
+    {
+        "machine_name": { "default_value": "LulzBot Workhorse | HS" }
+    }
+}

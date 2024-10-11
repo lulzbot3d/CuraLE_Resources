@@ -1,0 +1,23 @@
+{
+    "version": 2,
+    "name": "Workhorse",
+    "inherits": "workhorse",
+    "metadata":
+    {
+        "visible": false,
+        "base_machine": false,
+        "toolhead_category": "Galaxy",
+        "toolhead_selection_name": "Galaxy Tool Head",
+        "preferred_quality_type": "normal",
+        "has_variants": true,
+        "preferred_variant_name": "0.5 mm",
+        "firmware_toolhead_name": "Galaxy Series",
+        "firmware_latest_version": "2.1.3.0.35",
+        "firmware_file": "Workhorse/Marlin_TAZWorkhorse_Galaxy_2.1.3.0.35_9e7a16e.hex"
+    },
+    "overrides":
+    {
+        "cool_min_layer_time": { "value": 15 },
+        "speed_travel_layer_0": { "value": 100 }
+    }
+}
