@@ -177,12 +177,6 @@
                     "label": "Firmware Machine Type",
                     "type": "str"
                 },
-                "machine_associated_urls": { "default_value": "{ }",
-                    "description": "A dictionary of user-entered URLs associated with this machine in Cura LE.",
-                    "enabled": false,
-                    "label": "Machine Associated URLs",
-                    "type": "str"
-                },
                 "machine_bltouch_start_gcode":
                 {
                     "default_value": ";A cool generic default value",

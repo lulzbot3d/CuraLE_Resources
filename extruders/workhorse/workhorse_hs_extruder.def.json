@@ -2,10 +2,7 @@
     "version": 2,
     "name": "HS",
     "inherits": "universal_extruder",
-    "metadata":
-    {
-        "machine": "workhorse_hs"
-    },
+    "metadata": { "machine": "workhorse_hs" },
     "overrides":
     {
         "machine_nozzle_size": { "default_value": 0.8 }

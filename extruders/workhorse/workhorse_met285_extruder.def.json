@@ -2,8 +2,5 @@
     "version": 2,
     "name": "MET285",
     "inherits": "galaxy_extruder",
-    "metadata":
-    {
-        "machine": "workhorse_met285"
-    }
+    "metadata": { "machine": "workhorse_met285" }
 }

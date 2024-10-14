@@ -4,14 +4,11 @@
     "inherits": "workhorse",
     "metadata":
     {
-        "priority": "08",
         "visible": true,
         "base_machine": false,
-        "toolhead_selection_name": "H175 | 0.50 mm | Nickel-Plated Copper",
-        "machine_extruder_trains":
-        {
-            "0": "workhorse_h175_extruder"
-        }
+        "machine_extruder_trains": { "0": "workhorse_h175_extruder" },
+        "priority": "08",
+        "toolhead_selection_name": "H175 | 0.50 mm | Nickel-Plated Copper"
     },
     "overrides":
     {

@@ -2,10 +2,7 @@
     "version": 2,
     "name": "M175",
     "inherits": "universal_extruder",
-    "metadata":
-    {
-        "machine": "mini_2_m175"
-    },
+    "metadata": { "machine": "mini_2_m175" },
     "overrides":
     {
         "material_diameter": { "default_value": 1.75 }

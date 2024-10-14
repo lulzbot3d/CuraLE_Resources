@@ -4,14 +4,11 @@
     "inherits": "workhorse_galaxy",
     "metadata":
     {
-        "priority": "02",
         "visible": true,
         "base_machine": false,
-        "toolhead_selection_name": "METEOR 175 | Nickel-Plated Brass",
-        "machine_extruder_trains":
-        {
-            "0": "workhorse_met175_extruder"
-        }
+        "machine_extruder_trains": { "0": "workhorse_met175_extruder" },
+        "priority": "02",
+        "toolhead_selection_name": "METEOR 175 | Nickel-Plated Brass"
     },
     "overrides":
     {

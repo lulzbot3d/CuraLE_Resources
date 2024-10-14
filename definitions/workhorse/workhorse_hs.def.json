@@ -4,14 +4,11 @@
     "inherits": "workhorse",
     "metadata":
     {
-        "priority": "06",
         "visible": true,
         "base_machine": false,
-        "toolhead_selection_name": "HS | 0.80 mm | Hardened SST",
-        "machine_extruder_trains":
-        {
-            "0": "workhorse_hs_extruder"
-        }
+        "machine_extruder_trains": { "0": "workhorse_hs_extruder" },
+        "priority": "06",
+        "toolhead_selection_name": "HS | 0.80 mm | Hardened SST"
     },
     "overrides":
     {

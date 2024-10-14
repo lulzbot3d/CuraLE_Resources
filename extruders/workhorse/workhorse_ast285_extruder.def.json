@@ -2,10 +2,7 @@
     "version": 2,
     "name": "AST285",
     "inherits": "galaxy_extruder",
-    "metadata":
-    {
-        "machine": "workhorse_ast285"
-    },
+    "metadata": { "machine": "workhorse_ast285" },
     "overrides":
     {
         "machine_nozzle_size": { "default_value": 1.2 }

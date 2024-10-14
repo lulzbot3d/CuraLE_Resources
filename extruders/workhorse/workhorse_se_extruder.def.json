@@ -2,8 +2,5 @@
     "version": 2,
     "name": "SE",
     "inherits": "universal_extruder",
-    "metadata":
-    {
-        "machine": "workhorse_se"
-    }
+    "metadata": { "machine": "workhorse_se" }
 }
