@@ -134,7 +134,7 @@ class Definition(Linter):
         # Load parent definition if it exists
         if "inherits" in self._definitions[definition_name]:
             parent_def = self._definitions[definition_name]['inherits']
-            if parent_def in ("fdmextruder", "fdmprinter", "lulzbot_extruder", "lulzbot"):
+            if parent_def in ("fdmextruder", "fdmprinter", "lulzbot_extruder", "lulzbot", "taz"):
                 parent_file = Path.cwd().joinpath("definitions", f"{parent_def}.def.json")
             else:
                 parent_file = definition_file.parent.joinpath(f"{parent_def}.def.json")

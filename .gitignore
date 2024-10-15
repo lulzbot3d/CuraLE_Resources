@@ -9,6 +9,7 @@ _build_armhf/*
 .coverage
 *.pyc
 __pycache__/
+junit_cura.xml
 
 /conanbuildinfo.txt
 /graph_info.json
