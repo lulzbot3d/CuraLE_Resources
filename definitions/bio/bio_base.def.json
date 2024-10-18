@@ -64,6 +64,7 @@
                 [162, 0]
             ]
         },
+        "machine_heated_bed": { "default_value": false },
         "machine_height": { "default_value": 180 },
         "machine_level_x_axis_gcode": { "default_value_from_file": "mini_2/mini_2_level_x_axis" },
         "machine_name": { "default_value": "LulzBot Bio" },
