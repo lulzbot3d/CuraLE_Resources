@@ -8,9 +8,9 @@ from conan.errors import ConanInvalidConfiguration
 required_conan_version = ">=1.58.0 <2.0.0"
 
 
-class CuraLEResources(ConanFile):
+class CuraLEResourcesConan(ConanFile):
     name = "curale_resources"
-    license = ""
+    license = "LGPL-3.0"
     author = "FAME3D LLC."
     url = "https://github.com/lulzbot3d/CuraLE_Resources"
     description = "CuraLE Resources"
@@ -21,14 +21,14 @@ class CuraLEResources(ConanFile):
 
     @property
     def _shared_resources(self):
-        return ["definitions", "extruders", "gcodes", "images", "intent", "meshes", "quality", "variants"]
+        return ["definitions", "extruders", "gcode", "images", "intent", "meshes", "quality", "variants"]
 
     def set_version(self):
         if not self.version:
             self.version = self.conan_data["version"]
 
     def export(self):
-        copy(self, pattern="LICENSE*", src=os.path.join(self.recipe_folder, ".."), dst=self.export_folder,
+        copy(self, pattern="LICENSE*", src=self.recipe_folder, dst=self.export_folder,
              keep_path=False)
         update_conandata(self, {"version": self.version})
 
@@ -56,7 +56,7 @@ class CuraLEResources(ConanFile):
         self.runenv_info.append_path("CURA_ENGINE_SEARCH_PATH", os.path.join(self.package_folder, "res", "extruders"))
         self.env_info.CURA_RESOURCES.append(os.path.join(self.package_folder, "res"))
         self.env_info.CURA_ENGINE_SEARCH_PATH.append(os.path.join(self.package_folder, "res", "definitions"))
-        self.env_info.CURA_ENGINE_SEARCH_PATH.append(os.path.join(self.package_folder, "res", "definitions"))
+        self.env_info.CURA_ENGINE_SEARCH_PATH.append(os.path.join(self.package_folder, "res", "extruders"))
 
     def package_id(self):
         self.info.clear()
