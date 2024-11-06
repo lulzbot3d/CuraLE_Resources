@@ -17,6 +17,16 @@
         {
             "children":
             {
+                "extruder_disallowed_areas":
+                {
+                    "default_value": [],
+                    "description": "A list of polygons with areas the exturder is not allowed to enter.",
+                    "label": "Disallowed areas",
+                    "settable_per_extruder": true,
+                    "settable_per_mesh": false,
+                    "settable_per_meshgroup": false,
+                    "type": "polygons"
+                },
                 "purge_line_area_depth":
                 {
                     "default_value": 100,
