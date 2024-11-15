@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   fill="none"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="curale-icon.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview8"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.4355469"
+     inkscape:cx="199.92381"
+     inkscape:cy="228.83265"
+     inkscape:window-width="1920"
+     inkscape:window-height="943"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g4" />
+  <g
+     clip-path="url(#clip0_1923_105419)"
+     id="g4"
+     style="display:inline">
+    <g
+       filter="url(#filter0_i_1923_105419)"
+       id="g1"
+       transform="matrix(0.99999509,0,0,0.99999509,2.5054064e-4,2.5054064e-4)"
+       style="display:inline;filter:url(#filter0_i_1923_105419)">
+      <path
+         d="m 461.002,364.531 -96.471,96.471 H 51 V 147.471 L 147.471,51 h 313.531 z"
+         fill="#196ef0"
+         id="path1"
+         style="display:inline;fill:#c1d82f;fill-opacity:1" />
+    </g>
+    <path
+       d="M 452,60 V 360.917 L 360.917,452 H 60 V 151.083 L 151.083,60 Z"
+       stroke="#fafafa"
+       stroke-width="20"
+       id="path2"
+       style="display:inline;opacity:1;fill:none;fill-opacity:0;stroke:#000000;stroke-opacity:1" />
+    <path
+       d="m 217.30145,180.98285 q -3.33225,0 -5.83145,2.05603 -2.08266,2.05603 -2.08266,5.34568 v 133.23087 q 0,3.28966 2.08266,5.7569 2.4992,2.05603 5.83145,2.05603 h 133.70669 q 3.33225,0 5.4149,2.05602 2.4992,2.05603 2.4992,5.34569 v 54.27924 q 0,3.28965 -2.4992,5.7569 -2.08265,2.05603 -5.4149,2.05603 h -127.87525 -25.40843 -5.41491 q -3.33226,0 -7.49758,-0.82242 -4.16531,-0.82241 -7.08103,-2.46723 L 139.41002,357.8016 q -1.66614,-2.87844 -2.4992,-6.99051 -0.83306,-4.11206 -0.83306,-7.40172 v -2.46724 -43.58787 -97.86712 -21.79394 -11.10257 q 0,-3.28966 0.83306,-7.40172 0.83306,-4.11207 2.4992,-6.99051 l 38.32092,-37.83099 q 2.91572,-1.23362 5.83144,-2.05603 3.33225,-1.23362 4.99838,-1.23362 h 3.74879 5.41491 1.66613 0.83306 9.58023 141.20426 q 3.33225,0 5.4149,2.46724 2.4992,2.05604 2.4992,5.34568 v 54.27924 q 0,3.28966 -2.4992,5.7569 -2.08265,2.05603 -5.4149,2.05603 z"
+       id="text1"
+       style="font-weight:bold;font-size:192px;font-family:Outage;-inkscape-font-specification:'Outage Bold';display:inline;opacity:1;fill:#000000;stroke:#000000;stroke-width:0;stroke-dasharray:none;paint-order:markers fill stroke;filter:url(#filter1_d_1923_105419)"
+       inkscape:label="C"
+       aria-label="C" />
+  </g>
+  <defs
+     id="defs8">
+    <filter
+       id="filter0_i_1923_105419"
+       x="51"
+       y="51"
+       width="410.002"
+       height="410.002"
+       filterUnits="userSpaceOnUse"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         flood-opacity="0"
+         result="BackgroundImageFix"
+         id="feFlood4" />
+      <feBlend
+         mode="normal"
+         in="SourceGraphic"
+         in2="BackgroundImageFix"
+         result="shape"
+         id="feBlend4" />
+      <feColorMatrix
+         in="SourceAlpha"
+         type="matrix"
+         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+         result="hardAlpha"
+         id="feColorMatrix4" />
+      <feOffset
+         id="feOffset4" />
+      <feGaussianBlur
+         stdDeviation="4.6125225"
+         id="feGaussianBlur4" />
+      <feComposite
+         in2="hardAlpha"
+         operator="arithmetic"
+         k2="-1"
+         k3="1"
+         id="feComposite4" />
+      <feColorMatrix
+         type="matrix"
+         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"
+         id="feColorMatrix5" />
+      <feBlend
+         mode="normal"
+         in2="shape"
+         result="effect1_innerShadow_1923_105419"
+         id="feBlend5" />
+    </filter>
+    <filter
+       id="filter1_d_1923_105419"
+       x="123"
+       y="121"
+       width="255"
+       height="270"
+       filterUnits="userSpaceOnUse"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         flood-opacity="0"
+         result="BackgroundImageFix"
+         id="feFlood5" />
+      <feColorMatrix
+         in="SourceAlpha"
+         type="matrix"
+         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+         result="hardAlpha"
+         id="feColorMatrix6" />
+      <feOffset
+         id="feOffset6" />
+      <feGaussianBlur
+         stdDeviation="0.00054276646"
+         id="feGaussianBlur6" />
+      <feComposite
+         in2="hardAlpha"
+         operator="out"
+         id="feComposite6" />
+      <feColorMatrix
+         type="matrix"
+         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"
+         id="feColorMatrix7" />
+      <feBlend
+         mode="normal"
+         in2="BackgroundImageFix"
+         result="effect1_dropShadow_1923_105419"
+         id="feBlend7" />
+      <feBlend
+         mode="normal"
+         in="SourceGraphic"
+         in2="effect1_dropShadow_1923_105419"
+         result="shape"
+         id="feBlend8" />
+    </filter>
+    <clipPath
+       id="clip0_1923_105419">
+      <rect
+         width="512"
+         height="512"
+         fill="white"
+         id="rect8" />
+    </clipPath>
+  </defs>
+</svg>
