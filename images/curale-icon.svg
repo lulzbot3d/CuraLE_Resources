@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="512"
-   height="512"
-   viewBox="0 0 512 512"
+   width="412"
+   height="412"
+   viewBox="0 0 412 412"
    fill="none"
    version="1.1"
    id="svg8"
    sodipodi:docname="curale-icon.svg"
    inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   inkscape:export-filename="curale-32.png"
+   inkscape:export-xdpi="6"
+   inkscape:export-ydpi="6"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -22,18 +25,22 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="1.4355469"
-     inkscape:cx="199.92381"
-     inkscape:cy="228.83265"
+     inkscape:cx="150.117"
+     inkscape:cy="178.67755"
      inkscape:window-width="1920"
      inkscape:window-height="943"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g4" />
+     inkscape:current-layer="svg8" />
   <g
      clip-path="url(#clip0_1923_105419)"
      id="g4"
-     style="display:inline">
+     style="display:inline"
+     transform="translate(-50,-50)"
+     inkscape:export-filename="curale-16.png"
+     inkscape:export-xdpi="3.7281554"
+     inkscape:export-ydpi="3.7281554">
     <g
        filter="url(#filter0_i_1923_105419)"
        id="g1"
@@ -64,8 +71,8 @@
        id="filter0_i_1923_105419"
        x="51"
        y="51"
-       width="410.002"
-       height="410.002"
+       width="410.00201"
+       height="410.00201"
        filterUnits="userSpaceOnUse"
        color-interpolation-filters="sRGB">
       <feFlood
@@ -94,7 +101,9 @@
          operator="arithmetic"
          k2="-1"
          k3="1"
-         id="feComposite4" />
+         id="feComposite4"
+         k1="0"
+         k4="0" />
       <feColorMatrix
          type="matrix"
          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"
@@ -153,8 +162,10 @@
       <rect
          width="512"
          height="512"
-         fill="white"
-         id="rect8" />
+         fill="#ffffff"
+         id="rect8"
+         x="0"
+         y="0" />
     </clipPath>
   </defs>
 </svg>
