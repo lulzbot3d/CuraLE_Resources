@@ -26,3 +26,5 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+
+printer-linter/src/printerlinter/__pycache__
