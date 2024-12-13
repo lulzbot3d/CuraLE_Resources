@@ -1,6 +1,0 @@
-{
-    "version": 2,
-    "name": "MET285",
-    "inherits": "galaxy_extruder",
-    "metadata": { "machine": "mini_3_met285" }
-}

@@ -1,6 +1,0 @@
-{
-    "version": 2,
-    "name": "SK285",
-    "inherits": "universal_extruder",
-    "metadata": { "machine": "sidekick_747_sk285" }
-}
