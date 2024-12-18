@@ -28,3 +28,8 @@ env.bak/
 venv.bak/
 
 printer-linter/src/printerlinter/__pycache__
+
+# Specific testing files
+*voron*
+definitions/fdm*
+materials/generic_*
