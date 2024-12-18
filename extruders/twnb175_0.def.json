@@ -1,0 +1,12 @@
+{
+    "version": 2,
+    "name": "TWNB175 Left",
+    "inherits": "lulzbot_extruder",
+    "metadata":
+    {
+        "machine": "twnb175_base",
+        "position": "0"
+    },
+    "overrides":
+    {}
+}

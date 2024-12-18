@@ -1,0 +1,12 @@
+{
+    "version": 2,
+    "name": "AST285",
+    "inherits": "lulzbot_extruder",
+    "metadata":
+    {
+        "machine": "ast285_base",
+        "position": "0"
+    },
+    "overrides":
+    {}
+}

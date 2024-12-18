@@ -1,0 +1,12 @@
+{
+    "version": 2,
+    "name": "HE",
+    "inherits": "lulzbot_extruder",
+    "metadata":
+    {
+        "machine": "he_base",
+        "position": "0"
+    },
+    "overrides":
+    {}
+}

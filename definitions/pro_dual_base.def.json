@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "name": "Pro Dual Printer",
+    "inherits": "lulzbot_base",
+    "metadata":
+    {
+        "visible": false,
+        "has_machine_quality": true,
+        "has_materials": true,
+        "machine_extruder_trains": {
+            "0": "pro_dual_0",
+            "1": "pro_dual_1"
+        }
+    },
+    "overrides": {}
+}

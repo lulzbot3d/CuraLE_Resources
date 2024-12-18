@@ -1,0 +1,15 @@
+{
+    "version": 2,
+    "name": "MET175 Printer",
+    "inherits": "lulzbot_base",
+    "metadata":
+    {
+        "visible": false,
+        "has_machine_quality": true,
+        "has_materials": true,
+        "has_variants": true,
+        "machine_extruder_trains": { "0": "met175" },
+        "preferred_variant_name": "0.5mm"
+    },
+    "overrides": {}
+}

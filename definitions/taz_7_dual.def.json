@@ -1,0 +1,35 @@
+{
+    "version": 2,
+    "name": "TAZ Pro Dual",
+    "inherits": "pro_dual_base",
+    "metadata":
+    {
+        "visible": true,
+        "file_formats": "text/x-gcode",
+        "platform": "bed_plates/labeled/taz_pro_labeled.stl",
+        "platform_offset": [
+            0,
+            -14.6,
+            2
+        ]
+    },
+    "overrides":
+    {
+        "layer_start_x": { "value": "100" },
+        "layer_start_y": { "value": "100" },
+        "machine_end_gcode": { "default_value_from_file": "taz_pro/taz_pro_dual_end" },
+        "machine_extruder_count": { "default_value": 2 },
+        "machine_head_with_fans_polygon":
+        {
+            "default_value": [
+                [-37.5, 35],
+                [-37.5, -75],
+                [82.5, -75],
+                [82.5, 35]
+            ]
+        },
+        "machine_name": { "default_value": "LulzBot TAZ Pro | Pro Dual" },
+        "machine_start_gcode": { "default_value_from_file": "taz_pro/taz_pro_dual_start" },
+        "machine_wipe_gcode": { "default_value_from_file": "taz_pro/taz_pro_dual_wipe" }
+    }
+}

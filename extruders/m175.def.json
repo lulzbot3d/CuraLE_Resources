@@ -1,0 +1,12 @@
+{
+    "version": 2,
+    "name": "M175v2",
+    "inherits": "lulzbot_extruder",
+    "metadata":
+    {
+        "machine": "m175_base",
+        "position": "0"
+    },
+    "overrides":
+    {}
+}
