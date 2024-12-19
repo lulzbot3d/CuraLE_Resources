@@ -6,6 +6,10 @@ on:
     paths:
       - '*.xml.*'
       - '*.sig'
+      - '*.def.json'
+      - '*.inst.cfg'
+      - '*.gcode'
+      - 'meshes/*'
       - 'conanfile.py'
       - '.github/workflows/conan-package.yml'
     branches:
