@@ -1,0 +1,12 @@
+{
+    "version": 2,
+    "name": "Syringe Pump",
+    "inherits": "lulzbot_extruder",
+    "metadata":
+    {
+        "machine": "syringe_pump_base",
+        "position": "0"
+    },
+    "overrides":
+    {}
+}

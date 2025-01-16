@@ -1,0 +1,18 @@
+{
+    "version": 2,
+    "name": "Workhorse | HS | 0.80 mm",
+    "inherits": "hs_base",
+    "metadata":
+    {
+        "visible": true,
+        "toolhead_selection_name": "HS | 0.80 mm | Hardened SST"
+    },
+    "overrides":
+    {
+        "machine_name": { "default_value": "LulzBot Workhorse | HS" },
+        "machine_end_gcode": { "default_value_from_file": "workhorse/workhorse_end" },
+        "machine_level_x_axis_gcode": { "default_value_from_file": "taz_pro/taz_pro_level_x_axis" },
+        "machine_start_gcode": { "default_value_from_file": "workhorse/workhorse_start" },
+        "machine_wipe_gcode": { "default_value_from_file": "workhorse/workhorse_wipe" }
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "version": 2,
+    "name": "Bio | Syringe Pump",
+    "inherits": "syringe_pump_base",
+    "metadata":
+    {
+        "visible": true,
+        "file_formats": "text/x-gcode",
+        "machine_category": "Bio",
+        "platform": "bed_plates/labeled/bio_labeled.stl",
+        "platform_offset": [
+            0,
+            -14.8,
+            -2
+        ],
+        "preferred_material": "Generic_Sodium_Alginate",
+        "preferred_quality_type": "25_gauge"
+    },
+    "overrides":
+    {
+        "machine_name": { "default_value": "LulzBot Bio" },
+        "firmware_machine_type": { "default_value": "LulzBot Bio" },
+        "machine_heated_bed": { "default_value": false },
+        "machine_center_is_zero": { "default_value": true },
+        "machine_height": { "default_value": 180 },
+        "machine_width": { "default_value": 162 },
+        "machine_depth": { "default_value": 162 },
+        "machine_disallowed_areas":
+        {
+            "default_value": [
+                [
+                    [85, 85],
+                    [85, 77],
+                    [77, 85]
+                ],
+                [
+                    [-85, 85],
+                    [-85, 77],
+                    [-77, 85]
+                ],
+                [
+                    [85, -85],
+                    [85, -77],
+                    [77, -85]
+                ],
+                [
+                    [-85, -85],
+                    [-85, -77],
+                    [-77, -85]
+                ]
+            ]
+        },
+        "machine_start_gcode": { "default_value_from_file": "bio/bio_start" },
+        "machine_end_gcode": { "default_value_from_file": "bio/bio_end" },
+        "machine_level_x_axis_gcode": { "default_value_from_file": "mini_2/mini_2_level_x_axis" },
+        "machine_abort_gcode": { "default_value": "G28 Z" }
+    }
+}
