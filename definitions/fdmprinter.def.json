@@ -83,6 +83,49 @@
                     "settable_per_extruder": false,
                     "settable_per_meshgroup": false
                 },
+                "machine_wipe_gcode":
+                {
+                    "label": "Wipe G-code",
+                    "description": "Gcode for wiping Tool Head nozzle on wiper pad to clear debris",
+                    "type": "str",
+                    "settable_per_mesh": false,
+                    "settable_per_extruder": false,
+                    "settable_per_meshgroup": false
+                },
+                "machine_abort_gcode":
+                {
+                    "label": "Abort GCode",
+                    "description": "",
+                    "type": "str",
+                    "settable_per_mesh": false,
+                    "settable_per_extruder": false,
+                    "settable_per_meshgroup": false
+                },
+                "machine_level_x_axis_gcode":
+                {
+                    "label": "Level X Axis GCode",
+                    "description": "Gcode for forcing the x-axis into the top or bottom of the printer in order to level the ends.",
+                    "type": "str",
+                    "settable_per_mesh": false,
+                    "settable_per_extruder": false,
+                    "settable_per_meshgroup": false
+                },
+                "machine_port":
+                {
+                    "label": "Machine Port",
+                    "description": "Port",
+                    "default_value": "AUTO",
+                    "type": "str",
+                    "enabled": false
+                },
+                "machine_baudrate":
+                {
+                    "label": "Machine Baudrate",
+                    "description": "Baudrate",
+                    "default_value": "AUTO",
+                    "type": "str",
+                    "enabled": false
+                },
                 "material_guid":
                 {
                     "label": "Material GUID",
@@ -2628,6 +2671,20 @@
                     "settable_per_extruder": false,
                     "settable_per_meshgroup": false
                 },
+                "material_diameter":
+                {
+                    "label": "Diameter",
+                    "description": "Adjusts the diameter of the filament used. Match this value with the diameter of the used filament.",
+                    "unit": "mm",
+                    "type": "float",
+                    "default_value": 2.85,
+                    "minimum_value": "0.0001",
+                    "minimum_value_warning": "0.4",
+                    "maximum_value_warning": "3.5",
+                    "enabled": "machine_gcode_flavor != \"UltiGCode\"",
+                    "settable_per_mesh": false,
+                    "settable_per_extruder": true
+                },
                 "material_adhesion_tendency":
                 {
                     "label": "Adhesion Tendency",
@@ -3557,7 +3614,7 @@
                     "description": "The speed at which the vertical Z movement is made for Z Hops. This is typically lower than the print speed since the build plate or machine's gantry is harder to move.",
                     "unit": "mm/s",
                     "type": "float",
-                    "default_value": 10,
+                    "default_value": 3,
                     "minimum_value": "0",
                     "maximum_value": "machine_max_feedrate_z",
                     "settable_per_mesh": false,
@@ -4408,6 +4465,21 @@
                     "type": "float",
                     "default_value": 0,
                     "minimum_value": "0",
+                    "enabled": "resolveOrValue('retraction_combing') != 'off'",
+                    "settable_per_mesh": false,
+                    "settable_per_extruder": true
+                },
+                "retraction_combing_avoid_distance":
+                {
+                    "label": "Inside Travel Avoid Distance",
+                    "description": "The distance between the nozzle and already printed outer walls when travelling inside a model.",
+                    "unit": "mm",
+                    "type": "float",
+                    "default_value": 0,
+                    "value": "machine_nozzle_size * 1.5",
+                    "minimum_value": "0",
+                    "minimum_value_warning": "machine_nozzle_size * 0.5",
+                    "maximum_value_warning": "machine_nozzle_size * 10",
                     "enabled": "resolveOrValue('retraction_combing') != 'off'",
                     "settable_per_mesh": false,
                     "settable_per_extruder": true
@@ -6954,7 +7026,7 @@
                             "minimum_value": "0.1",
                             "minimum_value_warning": "100",
                             "maximum_value_warning": "10000",
-                            "enabled": "resolveOrValue('adhesion_type') == 'raft' and resolveOrValue('acceleration_enabled')",
+                            "enabled": "resolveOrValue('adhesion_type') == 'raft' and resolveOrValue('acceleration_enabled') and raft_surface_layers > 0",
                             "settable_per_mesh": false,
                             "limit_to_extruder": "raft_base_extruder_nr"
                         },
