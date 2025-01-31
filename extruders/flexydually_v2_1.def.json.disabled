@@ -1,0 +1,12 @@
+{
+    "version": 2,
+    "name": "FlexyDually v2 Extruder 1",
+    "inherits": "lulzbot_extruder",
+    "metadata":
+    {
+        "machine": "flexydually_v2_base",
+        "position": "1"
+    },
+    "overrides":
+    {}
+}

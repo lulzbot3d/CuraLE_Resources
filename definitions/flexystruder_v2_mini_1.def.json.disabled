@@ -1,7 +1,7 @@
 {
     "version": 2,
     "name": "Mini 1 | Flexystruder",
-    "inherits": "flexy_base",
+    "inherits": "flexystruder_v2_base",
     "metadata":
     {
         "visible": true,

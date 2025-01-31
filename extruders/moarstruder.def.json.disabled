@@ -1,0 +1,12 @@
+{
+    "version": 2,
+    "name": "MOARstruder",
+    "inherits": "lulzbot_extruder",
+    "metadata":
+    {
+        "machine": "moarstruder_base",
+        "position": "0"
+    },
+    "overrides":
+    {}
+}

@@ -1,0 +1,12 @@
+{
+    "version": 2,
+    "name": "Dual v3 Extruder 0",
+    "inherits": "lulzbot_extruder",
+    "metadata":
+    {
+        "machine": "dual_v3_base",
+        "position": "0"
+    },
+    "overrides":
+    {}
+}

@@ -1,7 +1,7 @@
 {
     "version": 2,
     "name": "TAZ 5 | Aerostruder | 0.50 mm",
-    "inherits": "aero_base",
+    "inherits": "aerostruder_base",
     "metadata":
     {
         "visible": true,

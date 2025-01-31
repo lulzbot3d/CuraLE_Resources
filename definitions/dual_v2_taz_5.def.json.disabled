@@ -1,7 +1,7 @@
 {
     "version": 2,
     "name": "TAZ 5 | Dual v2",
-    "inherits": "dualv2_base",
+    "inherits": "dual_v2_base",
     "metadata":
     {
         "visible": true,

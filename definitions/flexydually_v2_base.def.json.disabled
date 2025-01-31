@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "name": "FlexyDually v2 Printer",
+    "inherits": "lulzbot_base",
+    "metadata":
+    {
+        "visible": false,
+        "has_machine_quality": true,
+        "has_materials": true,
+        "machine_extruder_trains": {
+            "0": "flexydually_v2_0",
+            "1": "flexydually_v2_1"
+        }
+    },
+    "overrides": {}
+}

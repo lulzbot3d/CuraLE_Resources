@@ -1,0 +1,12 @@
+{
+    "version": 2,
+    "name": "Flexystruder v2",
+    "inherits": "lulzbot_extruder",
+    "metadata":
+    {
+        "machine": "flexystruder_v2_base",
+        "position": "0"
+    },
+    "overrides":
+    {}
+}

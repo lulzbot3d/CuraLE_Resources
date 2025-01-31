@@ -1,0 +1,12 @@
+{
+    "version": 2,
+    "name": "Twoolhead",
+    "inherits": "lulzbot_extruder",
+    "metadata":
+    {
+        "machine": "twoolhead_base",
+        "position": "0"
+    },
+    "overrides":
+    {}
+}

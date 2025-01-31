@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "name": "Dual v3 Printer",
+    "inherits": "lulzbot_base",
+    "metadata":
+    {
+        "visible": false,
+        "has_machine_quality": true,
+        "has_materials": true,
+        "machine_extruder_trains": {
+            "0": "dual_v3_0",
+            "1": "dual_v3_1"
+        }
+    },
+    "overrides": {}
+}

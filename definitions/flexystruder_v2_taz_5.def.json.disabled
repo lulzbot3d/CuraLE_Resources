@@ -1,7 +1,7 @@
 {
     "version": 2,
-    "name": "TAZ 5 Flexystruder v2",
-    "inherits": "flexy_base",
+    "name": "TAZ 5 | Flexystruder v2",
+    "inherits": "flexystruder_v2_base",
     "metadata":
     {
         "visible": true,

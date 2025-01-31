@@ -1,7 +1,7 @@
 {
     "version": 2,
     "name": "Mini 1 | Aerostruder",
-    "inherits": "aero_base",
+    "inherits": "aerostruder_base",
     "metadata":
     {
         "visible": true,
