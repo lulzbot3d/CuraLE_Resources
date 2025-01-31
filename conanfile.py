@@ -20,7 +20,7 @@ class CuraLEResourcesConan(ConanFile):
 
     @property
     def _shared_resources(self):
-        return ["definitions", "extruders", "gcodes", "images", "intent", "materials", "meshes", "quality", "variants"]
+        return ["definitions", "extruders", "gcodes", "images", "intent", "meshes", "quality", "variants"]
 
     def set_version(self):
         if not self.version:
