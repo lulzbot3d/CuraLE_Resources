@@ -1,0 +1,37 @@
+{
+    "version": 2,
+    "name": "TAZ Pro | TWNB175",
+    "inherits": "twnb175_base",
+    "metadata":
+    {
+        "visible": true,
+        "file_formats": "text/x-gcode",
+        "platform": "bed_plates/labeled/taz_pro_labeled.stl",
+        "platform_offset": [
+            0,
+            -14.6,
+            2
+        ]
+    },
+    "overrides":
+    {
+        "acceleration_print": { "default_value": 1000 },
+        "jerk_print": { "default_value": 12 },
+        "jerk_travel": { "value": 12 },
+        "layer_start_x": { "value": "100" },
+        "layer_start_y": { "value": "100" },
+        "machine_acceleration": { "default_value": 1000 },
+        "machine_height": { "default_value": 285 },
+        "machine_end_gcode": { "default_value_from_file": "taz_pro/taz_pro_dual_end" },
+        "machine_extruder_count": { "default_value": 2 },
+        "machine_name": { "default_value": "LulzBot TAZ Pro | TWNB175" },
+        "machine_bltouch_start_gcode": { "default_value_from_file": "taz_pro/taz_pro_bltouch_start" },
+        "machine_depth": { "default_value": 285 },
+        "machine_level_x_axis_gcode": { "default_value_from_file": "taz_pro/taz_pro_level_x_axis" },
+        "machine_width": { "default_value": 285 },
+        "machine_start_gcode": { "default_value_from_file": "taz_pro/taz_pro_dual_start" },
+        "machine_wipe_gcode": { "default_value_from_file": "taz_pro/taz_pro_dual_wipe" },
+        "cool_min_layer_time": { "value": 15 },
+        "speed_travel_layer_0": { "value": 100 }
+    }
+}

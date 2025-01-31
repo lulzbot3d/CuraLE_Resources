@@ -1,0 +1,58 @@
+{
+    "version": 2,
+    "name": "Mini 1 | Aerostruder",
+    "inherits": "aero_base",
+    "metadata":
+    {
+        "visible": true,
+        "file_formats": "text/x-gcode",
+        "platform": "bed_plates/labeled/mini_1_labeled.stl",
+        "has_optional_lcd": true,
+        "lcd_is_standard": false,
+        "platform_offset": [
+            10,
+            -11.3,
+            -2
+        ]
+    },
+    "overrides":
+    {
+        "machine_name": { "default_value": "LulzBot Mini 1 | Aerostruder" },
+        "acceleration_print": { "default_value": 500 },
+        "acceleration_travel": { "default_value": 500 },
+        "firmware_machine_type": { "resolve": "'LulzBot Mini LCD' if machine_has_lcd else 'LulzBot Mini'" },
+        "machine_acceleration": { "default_value": 500 },
+        "machine_depth": { "default_value": 154 },
+        "machine_disallowed_areas":
+        {
+            "default_value": [
+                [
+                    [85, 85],
+                    [85, 77],
+                    [77, 85]
+                ],
+                [
+                    [-85, 85],
+                    [-85, 77],
+                    [-77, 85]
+                ],
+                [
+                    [85, -85],
+                    [85, -77],
+                    [77, -85]
+                ],
+                [
+                    [-85, -85],
+                    [-85, -77],
+                    [-77, -85]
+                ]
+            ]
+        },
+        "machine_end_gcode": { "default_value_from_file": "mini_1/mini_1_end" },
+        "machine_height": { "default_value": 158 },
+        "machine_max_feedrate_z": { "default_value": 3 },
+        "machine_start_gcode": { "default_value_from_file": "mini_1/mini_1_start" },
+        "machine_width": { "default_value": 154 },
+        "machine_wipe_gcode": { "default_value_from_file": "mini_1/mini_1_wipe" }
+    }
+}

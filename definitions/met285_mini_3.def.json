@@ -1,0 +1,56 @@
+{
+    "version": 2,
+    "name": "Mini 3 | MET285",
+    "inherits": "met285_base",
+    "metadata":
+    {
+        "visible": true,
+        "file_formats": "text/x-gcode",
+        "platform": "bed_plates/labeled/mini_3_labeled.stl",
+        "bltouch_is_standard": true,
+        "firmware_type": "Klipper",
+        "platform_offset": [
+            0,
+            -15.5,
+            0
+        ]
+    },
+    "overrides":
+    {
+        "machine_name": { "default_value": "LulzBot Mini 3 | MET285" },
+        "machine_depth": { "default_value": 180 },
+        "machine_disallowed_areas":
+        {
+            "default_value": [
+                [
+                    [90, 90],
+                    [90, 88],
+                    [88, 90]
+                ],
+                [
+                    [-90, 90],
+                    [-90, 88],
+                    [-88, 90]
+                ],
+                [
+                    [-90, -90],
+                    [-90, -88],
+                    [-88, -90]
+                ],
+                [
+                    [90, -90],
+                    [90, -88],
+                    [88, -90]
+                ]
+            ]
+        },
+        "machine_end_gcode": { "default_value_from_file": "mini_3/mini_3_end" },
+        "machine_has_bltouch": { "value": true },
+        "machine_height": { "default_value": 180 },
+        "machine_max_feedrate_z": { "default_value": 200 },
+        "machine_start_gcode": { "default_value_from_file": "mini_3/mini_3_start" },
+        "machine_width": { "default_value": 180 },
+        "cool_min_layer_time": { "value": 15 },
+        "speed_travel_layer_0": { "value": 100 }
+    }
+}

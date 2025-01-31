@@ -1,0 +1,33 @@
+{
+    "version": 2,
+    "name": "SideKick 289 | MET285",
+    "inherits": "met285_base",
+    "metadata":
+    {
+        "visible": true,
+        "file_formats": "text/x-gcode",
+        "platform": "bed_plates/labeled/sidekick_289_labeled.stl",
+        "bltouch_is_standard": true,
+        "platform_offset": [
+            0,
+            -17.3,
+            0
+        ],
+        "has_optional_lcd": false
+    },
+    "overrides":
+    {
+        "machine_name": { "default_value": "LulzBot SideKick 289 | MET285" },
+        "acceleration_travel": { "value": 5000 },
+        "firmware_machine_type": { "default_value": "Taz SideKick 289" },
+        "machine_depth": { "default_value": 165.3 },
+        "machine_end_gcode": { "default_value_from_file": "sidekick/sidekick_289_end" },
+        "machine_has_bltouch": { "value": true },
+        "machine_height": { "default_value": 181 },
+        "machine_level_x_axis_gcode": { "default_value_from_file": "sidekick/sidekick_level_x_axis" },
+        "machine_start_gcode": { "default_value_from_file": "sidekick/sidekick_start" },
+        "machine_width": { "default_value": 165.3 },
+        "cool_min_layer_time": { "value": 15 },
+        "speed_travel_layer_0": { "value": 100 }
+    }
+}

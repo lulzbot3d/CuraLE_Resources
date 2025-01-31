@@ -11,5 +11,10 @@
         "machine_extruder_trains": { "0": "ast285" },
         "preferred_variant_name": "1.2mm"
     },
-    "overrides": {}
+    "overrides":
+    {
+        "cool_min_layer_time": { "value": 15 },
+        "speed_travel_layer_0": { "value": 100 },
+        "travel_avoid_supports": { "value": true }
+    }
 }

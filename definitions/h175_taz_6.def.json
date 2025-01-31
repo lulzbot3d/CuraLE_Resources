@@ -1,0 +1,32 @@
+{
+    "version": 2,
+    "name": "TAZ 6 | H175 | 0.50 mm",
+    "inherits": "h175_base",
+    "metadata":
+    {
+        "visible": true,
+        "platform": "bed_plates/labeled/taz_6_labeled.stl",
+        "platform_offset": [
+            -14,
+            -19.1,
+            0
+        ]
+    },
+    "overrides":
+    {
+        "machine_name": { "default_value": "LulzBot TAZ 6 | H175" },
+        "jerk_print": { "default_value": 12 },
+        "jerk_travel": { "value": 12 },
+        "machine_depth": { "default_value": 280 },
+        "machine_width": { "default_value": 280 },
+        "acceleration_print": { "default_value": 500 },
+        "acceleration_travel": { "default_value": 500 },
+        "firmware_machine_type": { "resolve": "'LulzBot TAZ 6'" },
+        "machine_acceleration": { "default_value": 500 },
+        "machine_end_gcode": { "default_value_from_file": "taz_6/taz_6_end" },
+        "machine_height": { "default_value": 250 },
+        "machine_max_feedrate_z": { "default_value": 3 },
+        "machine_start_gcode": { "default_value_from_file": "taz_6/taz_6_start" },
+        "machine_wipe_gcode": { "default_value_from_file": "taz_6/taz_6_wipe" }
+    }
+}

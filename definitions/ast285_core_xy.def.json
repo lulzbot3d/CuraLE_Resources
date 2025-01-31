@@ -1,0 +1,24 @@
+{
+    "version": 2,
+    "name": "Core XY | AST285",
+    "inherits": "ast285_base",
+    "metadata":
+    {
+        "visible": true,
+        "file_formats": "text/x-gcode",
+        "platform": "",
+        "bltouch_is_standard": true,
+        "firmware_type": "Klipper"
+    },
+    "overrides":
+    {
+        "machine_name": { "default_value": "LulzBot Core XY | AST285" },
+        "machine_depth": { "default_value": 250 },
+        "machine_end_gcode": { "default_value_from_file": "core_xy/core_xy_end" },
+        "machine_has_bltouch": { "value": true },
+        "machine_height": { "default_value": 110 },
+        "machine_max_feedrate_z": { "default_value": 25 },
+        "machine_start_gcode": { "default_value_from_file": "core_xy/core_xy_start" },
+        "machine_width": { "default_value": 250 }
+    }
+}

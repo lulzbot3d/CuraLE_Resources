@@ -1,11 +1,11 @@
 {
     "version": 2,
-    "name": "Workhorse+ | MET285",
-    "inherits": "met285_base",
+    "name": "Workhorse | SE | 0.50 mm",
+    "inherits": "se_base",
     "metadata":
     {
         "visible": true,
-        "toolhead_selection_name": "METEOR 285 | Nickel-Plated Brass",
+        "toolhead_selection_name": "SE | 0.50 mm | Nickel-Plated Copper",
         "platform": "bed_plates/labeled/workhorse_labeled.stl",
         "platform_offset": [
             -2,
@@ -15,7 +15,14 @@
     },
     "overrides":
     {
-        "machine_name": { "default_value": "LulzBot Workhorse | MET285" },
+        "acceleration_print": { "default_value": 1000 },
+        "jerk_print": { "default_value": 12 },
+        "jerk_travel": { "value": 12 },
+        "machine_acceleration": { "default_value": 1000 },
+        "machine_depth": { "default_value": 280 },
+        "machine_height": { "default_value": 285 },
+        "machine_width": { "default_value": 280 },
+        "machine_name": { "default_value": "LulzBot Workhorse | SE" },
         "machine_end_gcode": { "default_value_from_file": "workhorse/workhorse_end" },
         "machine_level_x_axis_gcode": { "default_value_from_file": "taz_pro/taz_pro_level_x_axis" },
         "machine_start_gcode": { "default_value_from_file": "workhorse/workhorse_start" },

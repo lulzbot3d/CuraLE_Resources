@@ -15,6 +15,13 @@
     },
     "overrides":
     {
+        "acceleration_print": { "default_value": 1000 },
+        "jerk_print": { "default_value": 12 },
+        "jerk_travel": { "value": 12 },
+        "machine_acceleration": { "default_value": 1000 },
+        "machine_depth": { "default_value": 280 },
+        "machine_height": { "default_value": 285 },
+        "machine_width": { "default_value": 280 },
         "machine_name": { "default_value": "LulzBot Workhorse | HS+" },
         "machine_end_gcode": { "default_value_from_file": "workhorse/workhorse_end" },
         "machine_level_x_axis_gcode": { "default_value_from_file": "taz_pro/taz_pro_level_x_axis" },

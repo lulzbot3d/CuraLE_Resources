@@ -15,6 +15,11 @@
     },
     "overrides":
     {
+        "acceleration_print": { "default_value": 1000 },
+        "jerk_print": { "default_value": 12 },
+        "jerk_travel": { "value": 12 },
+        "machine_acceleration": { "default_value": 1000 },
+        "machine_height": { "default_value": 285 },
         "layer_start_x": { "value": "100" },
         "layer_start_y": { "value": "100" },
         "machine_end_gcode": { "default_value_from_file": "taz_pro/taz_pro_dual_end" },
@@ -29,6 +34,10 @@
             ]
         },
         "machine_name": { "default_value": "LulzBot TAZ Pro | Pro Dual" },
+        "machine_bltouch_start_gcode": { "default_value_from_file": "taz_pro/taz_pro_bltouch_start" },
+        "machine_depth": { "default_value": 285 },
+        "machine_level_x_axis_gcode": { "default_value_from_file": "taz_pro/taz_pro_level_x_axis" },
+        "machine_width": { "default_value": 285 },
         "machine_start_gcode": { "default_value_from_file": "taz_pro/taz_pro_dual_start" },
         "machine_wipe_gcode": { "default_value_from_file": "taz_pro/taz_pro_dual_wipe" }
     }
