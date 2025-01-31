@@ -32,4 +32,4 @@ printer-linter/src/printerlinter/__pycache__
 # Specific testing files
 *voron*
 definitions/fdm*
-materials/generic_*
+# materials/generic_*
