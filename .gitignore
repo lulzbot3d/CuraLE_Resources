@@ -11,6 +11,8 @@ _build_armhf/*
 __pycache__/
 junit_cura.xml
 
+*conanbuild*
+*conanrun*
 /conanbuildinfo.txt
 /graph_info.json
 

@@ -32,9 +32,9 @@ class CuraLEResourcesConan(ConanFile):
         update_conandata(self, {"version": self.version})
 
     def export_sources(self):
-        for shared_resources in self._shared_resources:
-            copy(self, pattern="*", src=os.path.join(self.recipe_folder, shared_resources),
-                 dst=os.path.join(self.export_sources_folder, shared_resources))
+        for resource in self._shared_resources:
+            copy(self, pattern="*", src=os.path.join(self.recipe_folder, resource),
+                 dst=os.path.join(self.export_sources_folder, resource))
 
     def layout(self):
         self.cpp.source.resdirs = self._shared_resources
@@ -42,13 +42,13 @@ class CuraLEResourcesConan(ConanFile):
 
     def package(self):
         copy(self, "*", os.path.join(self.export_sources_folder),
-             os.path.join(self.package_folder, "res"))
+             os.path.join(self.package_folder, "res", "resources"))
 
     def package_info(self):
         self.cpp_info.includedirs = []
-        self.runenv_info.define("CURA_RESOURCES", os.path.join(self.package_folder, "res"))
-        self.runenv_info.define("CURA_ENGINE_SEARCH_PATH", os.path.join(self.package_folder, "res", "definitions"))
-        self.runenv_info.define("CURA_ENGINE_SEARCH_PATH", os.path.join(self.package_folder, "res", "extruders"))
+        self.runenv_info.define("CURA_RESOURCES", os.path.join(self.package_folder, "res", "resources"))
+        self.runenv_info.define("CURA_ENGINE_SEARCH_PATH", os.path.join(self.package_folder, "res", "resources", "definitions"))
+        self.runenv_info.define("CURA_ENGINE_SEARCH_PATH", os.path.join(self.package_folder, "res", "resources", "extruders"))
 
     def package_id(self):
         self.info.clear()
